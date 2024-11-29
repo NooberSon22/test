@@ -2,6 +2,9 @@
 
 Live link: [https://cheery-tarsier-36a350.netlify.app/](https://cheery-tarsier-36a350.netlify.app/)
 
+## Usage Limitation
+Currently limited to answering only **100 queries**. Once this limit is reached, it will no longer be able to provide responses. 
+
 ## DOM Elements
 These elements are selected using `document.querySelector` or `document.getElementById` and are used throughout the script for user interactions.
 
