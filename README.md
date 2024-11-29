@@ -1,6 +1,6 @@
 # Project Documentation
 
-Live link: [GitHub](https://cheery-tarsier-36a350.netlify.app/)
+Live link: [https://cheery-tarsier-36a350.netlify.app/](https://cheery-tarsier-36a350.netlify.app/)
 
 ## DOM Elements
 These elements are selected using `document.querySelector` or `document.getElementById` and are used throughout the script for user interactions.
