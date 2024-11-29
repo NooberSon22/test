@@ -99,10 +99,18 @@ const renderFiles = (files) => {
   filesField.innerHTML = "";
   files.forEach((file) => {
     const div = document.createElement("div");
-    div.innerHTML = `
-      <p>${file.name}</p>
-      <div onclick="removeFile('${file.id}')">&#x2715;</div>
-    `;
+
+    // File Name
+    const fileName = document.createElement("p");
+    fileName.textContent = file.name;
+
+    // Delete Button
+    const deleteButton = document.createElement("div");
+    deleteButton.innerHTML = "&#x2715;"; // Cross icon
+    deleteButton.addEventListener("click", () => removeFile(file.id));
+
+    div.appendChild(fileName);
+    div.appendChild(deleteButton);
     filesField.appendChild(div);
   });
 };
