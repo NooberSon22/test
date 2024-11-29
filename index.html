@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Chat</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <!-- File Upload Section -->
+            <div class="upload-file">
+                <p><strong>UPLOAD A FILE:</strong></p>
+                <div id="form">
+                    <input type="file" name="file" id="doc" />
+                    <button id="button">Upload</button>
+                </div>    
+            </div>
+
+            <!-- Files List Section -->
+            <div class="files-container">
+                <div class="files-header">
+                    <p><strong>FILES</strong></p>
+                    <button id="refresh" title="Refresh Files">⟲</button>
+                </div>
+                <div class="files">
+                    <!-- Dynamically populated list of files will go here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat">
+            <div class="chat-container">
+               
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="chat-input" />
+                <button id="chat-button" >Send</button>
+            </div>
+        </div>
+
+        <!-- Chat History Section -->
+        
+        <div class="chat-history-container">
+            <!-- Toggle button -->
+            <div class="chat-history-icon" id="toggleChat">
+                &#x2630; <!-- Hamburger menu icon -->
+            </div>
+        
+            <!-- Chat history -->
+            <div class="chat-history" id="chatHistory">
+                <p>CHAT HISTORY</p>
+                <div class="chat-history-list">
+                </div>
+                <div class="new-chat" id="new-chat" >New Chat</div>
+            </div>
+        </div>        
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>
