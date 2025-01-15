@@ -170,7 +170,7 @@ const displayConversations = (history) => {
     // Chat Name
     const chatName = document.createElement("span");
     chatName.textContent =
-      conversation.name.length > 20
+      conversation.name?.length > 20
         ? conversation.name.slice(0, 20) + "..."
         : conversation.name;
     li.addEventListener("click", async () => {
