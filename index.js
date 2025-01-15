@@ -12,9 +12,9 @@ const chatHistoryList = document.querySelector(".chat-history-list");
 const newChat = document.getElementById("new-chat");
 
 // Configuration
-const authToken = "eWzuMruMIrCVdmcYNAG1IqWMNRVUpdTgsv7jpBEB0b04f1c1";
-const folderId = "4y1aKrvjzeQG";
-const botId = "oBDbD8R5qbl2";
+const authToken = "a7OoM07P18TcJFh2CFVHoxvyQtBA9SuCbpBRhnDn855fc4bd";
+const folderId = "EKQe1wProbJY";
+const botId = "oBDbD8NAqbl2";
 const HEADERS = { Authorization: `Bearer ${authToken}` };
 let chats = [];
 let chosenChat = null;
